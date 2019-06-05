@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button buttonSe = (Button)findViewById(R.id.buttonSecond);
+        buttonSe.setOnClickListener(this);
 
         tvMsg=(TextView)findViewById(R.id.tvFirst);
     }
@@ -25,6 +27,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // do something when the button is clicked
         if (v instanceof Button) {
             button = (Button) v;
+            if (button.getId()==R.id.buttonSecond) {
+                tvMsg.setText("You press second button!");
+            }
+
 
         }
     }

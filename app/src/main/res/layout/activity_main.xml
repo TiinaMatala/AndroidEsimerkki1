@@ -17,6 +17,12 @@
         android:id="@+id/tvFirst"
         android:text="Implement a Listener interfce!" />
 
+    <Button
+        android:text="Second Activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSecond" />
+
 
 </LinearLayout>
 
