@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button buttonSe = (Button)findViewById(R.id.buttonSecond);
         buttonSe.setOnClickListener(this);
-
+        Button buttonTh = (Button)findViewById(R.id.buttonThird);
+        buttonTh.setOnClickListener(this);
         tvMsg=(TextView)findViewById(R.id.tvFirst);
     }
 
@@ -30,8 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (button.getId()==R.id.buttonSecond) {
                 tvMsg.setText("You press second button!");
             }
-
-
+            if (button.getId()==R.id.buttonThird) {
+                tvMsg.setText("You press third button!");            }
         }
     }
 }
